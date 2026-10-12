@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@amplitude/analytics-react-native": "1.4.13",
-    "@confirio/react-native-sdk": "0.1.1",
+    "@confirio/react-native-sdk": "0.1.2",
     "@giphy/react-native-sdk": "4.1.0",
     "@react-native-async-storage/async-storage": "1.23.1",
     "@react-native-clipboard/clipboard": "1.14.3",

@@ -57,7 +57,7 @@ react {
 /**
  * Set this to true to Run Proguard on Release builds to minify the Java bytecode.
  */
-def enableProguardInReleaseBuilds = false
+def enableProguardInReleaseBuilds = true
 
 /**
  * The preferred build flavor of JavaScriptCore (JSC)
@@ -84,7 +84,11 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        // Sin este filtro el APK suma las 4 arquitecturas que traen las librerías nativas del SDK.
+        ndk { abiFilters(*reactNativeArchitectures.split(",")) }
     }
+    // Comprimidas: el APK pesa la mitad y Android las descomprime al instalar.
+    packaging { jniLibs { useLegacyPackaging true } }
     signingConfigs {
         debug {
             storeFile file('debug.keystore')
