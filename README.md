@@ -4,6 +4,12 @@ Una app de React Native que abre una sala de Confirio con [`@confirio/react-nati
 
 Por ahora el SDK funciona sólo en Android. La guía completa está en https://confirio.app/docs/movil.html.
 
+## Probalo sin compilar
+
+Bajá la app ya compilada en tu celular Android: [confirio-ejemplo.apk](https://github.com/confirio/ejemplo-react-native/releases/latest/download/confirio-ejemplo.apk) (57 MB). Android te va a pedir permiso para instalar una app que no viene de Play Store.
+
+Para entrar necesitás una sala. Sin cuenta, usá la de prueba: en https://confirio.app tocá "Probá una sala ahora", abrí "Entrar como quien atiende" en la computadora y pegá en la app el link para la otra persona.
+
 ## Qué necesitás
 
 - Node 22.11 o posterior.
