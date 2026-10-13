@@ -6,7 +6,7 @@ Por ahora el SDK funciona sólo en Android. La guía completa está en https://c
 
 ## Qué necesitás
 
-- Node 18 o posterior.
+- Node 22.11 o posterior.
 - Android Studio con un emulador o un celular Android con la depuración USB activada.
 - JDK 17.
 - Una cuenta de Confirio con una API key. Si todavía no tenés, pedila en https://confirio.app.
@@ -51,9 +51,8 @@ Todo está en [`App.tsx`](App.tsx). La pantalla de inicio valida el link y despu
 
 En tu app, el `joinUrl` lo entrega tu backend después de crear la sala, como hace [`crear-sala.mjs`](crear-sala.mjs). La API key queda siempre en el backend: nunca la pongas en la app.
 
-Dos ajustes de Android que necesita el SDK y ya están hechos acá:
+Un ajuste de Android que ya está hecho acá:
 
-- `newArchEnabled=false` en [`android/gradle.properties`](android/gradle.properties): el SDK está probado sólo con la arquitectura anterior.
 - En [`AndroidManifest.xml`](android/app/src/main/AndroidManifest.xml) se sacan permisos que traen algunas dependencias y la sala no usa (calendario y servicios de Google). Es opcional.
 
 ## Licencia
