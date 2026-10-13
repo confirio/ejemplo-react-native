@@ -54,7 +54,7 @@ export default function App() {
         <StatusBar barStyle="dark-content" backgroundColor={colors.background} />
         <Text style={styles.title}>Entrá a una sala</Text>
         <Text style={styles.help}>
-          Creá una sala desde "Probar API" en el panel de Confirio y pegá acá el link de participante.
+          Pegá acá el link de participante de una sala. Sin cuenta, creá una de prueba en confirio.app con "Probá una sala ahora"; con cuenta, desde "Probar API" en el panel.
         </Text>
 
         <Text style={styles.label}>Link de la sala</Text>
