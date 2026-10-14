@@ -59,7 +59,7 @@ En tu app, el `joinUrl` lo entrega tu backend después de crear la sala, como ha
 
 Un ajuste de Android que ya está hecho acá:
 
-- En [`AndroidManifest.xml`](android/app/src/main/AndroidManifest.xml) se sacan permisos que traen algunas dependencias y la sala no usa (calendario y servicios de Google). Es opcional.
+- En [`AndroidManifest.xml`](android/app/src/main/AndroidManifest.xml) se saca un permiso que trae `react-native-device-info` y la sala no usa. Es opcional.
 
 ## Licencia
 
